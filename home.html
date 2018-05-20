@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,minimum-scale=1, maximum-scale=1">
+	<title>漂亮美丽可爱的柔柔，送给你的旋转相册</title>
+	<meta charset="UTF-8" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<META HTTP-EQUIV="pragma" CONTENT="no-cache">
+	<META HTTP-EQUIV="Cache-Control" CONTENT="no-cache, must-revalidate">
+	<META HTTP-EQUIV="expires" CONTENT="0">
+	<link rel="shortcut icon " type="images/x-icon" href="./favicon.png">
+	<style>
+		*{
+			margin:0;
+			padding:0;
+		}
+		html,body{
+			height:100%;
+		}
+		body{
+			background:url(images/bg2.jpg) no-repeat;
+			background-size:100% 100%;
+		}
+		section{
+			width:280px;
+			height:400px;
+			position:fixed;
+			left:0;
+			right:0;
+			top:0;
+			bottom:0;
+			margin:auto;
+			transform-style:preserve-3d;
+			animation: myMove 50s linear infinite;
+		}
+		section img{
+			display:block;
+			width:280px;
+			height:400px;
+			position:absolute;
+			transform-origin:center center -600px;
+		}
+		section img:nth-child(1){
+			transform:translateZ(600px) rotateY(36deg);
+		}
+		section img:nth-child(2){
+			transform:translateZ(600px) rotateY(72deg);
+		}
+		section img:nth-child(3){
+			transform:translateZ(600px) rotateY(108deg);
+		}
+		section img:nth-child(4){
+			transform:translateZ(600px) rotateY(144deg);
+		}
+		section img:nth-child(5){
+			transform:translateZ(600px) rotateY(180deg);
+		}
+		section img:nth-child(6){
+			transform:translateZ(600px) rotateY(216deg);
+		}
+		section img:nth-child(7){
+			transform:translateZ(600px) rotateY(252deg);
+		}
+		section img:nth-child(8){
+			transform:translateZ(600px) rotateY(288deg);
+		}
+		section img:nth-child(9){
+			transform:translateZ(600px) rotateY(324deg);
+		}
+		section img:nth-child(10){
+			transform:translateZ(600px) rotateY(360deg);
+		}
+		@keyframes myMove{
+			0%{
+				transform:rotateX(0deg) rotateY(0deg);
+			}
+			25%{
+				transform:rotateX(20deg) rotateY(180deg);
+			}
+			50%{
+				transform:rotateX(0deg) rotateY(360deg);
+			}
+			75%{
+				transform:rotateX(-20deg) rotateY(540deg);
+			}
+			100%{
+				transform:rotateX(0deg) rotateY(720deg);
+			}
+		}
+	</style>
+</head>
+<body>
+	<section>
+		<img src="images/1.jpeg" alt="" title="有人说戴帽子的女孩会很美，看到你，我信了">
+		<img src="images/2.jpeg" alt="" title="这是在干什么呢，感觉像是想起了很开心的事情">
+		<img src="images/3.jpeg" alt="" title="美美哒">
+		<img src="images/4.jpeg" alt="" title="我觉得这个看着挺成熟的，让我想起了我的英语老师，这么的有气质">
+		<img src="images/5.jpeg" alt="" title="嘿嘿，这是你读书的时候嘛，看着像18岁">
+		<img src="images/6.jpeg" alt="" title="好可爱，看着都萌萌的">
+		<img src="images/7.jpeg" alt="" title="咋这么像淑女呢">
+		<img src="images/8.jpeg" alt="" title="古典美女，这是穿越了嘛，看到古代的你">
+		<img src="images/9.jpeg" alt="" title="柔柔姑娘，我想做你的护花使者">
+		<img src="images/10.jpeg" alt="" title="你是仙女下凡嘛">
+	</section>
+	<audio loop src="images/beautiful.mp3" id="audio" autoplay preload="auto" controls></audio>
+</body>
+<script>
+    var audio = document.getElementById("audio");
+    //播放(继续播放)
+    audio.play();
+</script>
+</html>
