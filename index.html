@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			margin:0;
+			padding:0;
+		}
+		html,body{
+			height:100%;
+		}
+		body{
+			background:url(images/bg2.jpg) no-repeat;
+			background-size:100% 100%;
+		}
+		section{
+			width:280px;
+			height:400px;
+			position:fixed;
+			left:0;
+			right:0;
+			top:0;
+			bottom:0;
+			margin:auto;
+			transform-style:preserve-3d;
+			animation: myMove 30s linear infinite;
+		}
+		section img{
+			display:block;
+			width:280px;
+			height:400px;
+			position:absolute;
+			transform-origin:center center -600px;
+		}
+		section img:nth-child(1){
+			transform:translateZ(600px) rotateY(36deg);
+		}
+		section img:nth-child(2){
+			transform:translateZ(600px) rotateY(72deg);
+		}
+		section img:nth-child(3){
+			transform:translateZ(600px) rotateY(108deg);
+		}
+		section img:nth-child(4){
+			transform:translateZ(600px) rotateY(144deg);
+		}
+		section img:nth-child(5){
+			transform:translateZ(600px) rotateY(180deg);
+		}
+		section img:nth-child(6){
+			transform:translateZ(600px) rotateY(216deg);
+		}
+		section img:nth-child(7){
+			transform:translateZ(600px) rotateY(252deg);
+		}
+		section img:nth-child(8){
+			transform:translateZ(600px) rotateY(288deg);
+		}
+		section img:nth-child(9){
+			transform:translateZ(600px) rotateY(324deg);
+		}
+		section img:nth-child(10){
+			transform:translateZ(600px) rotateY(360deg);
+		}
+		@keyframes myMove{
+			0%{
+				transform:rotateX(0deg) rotateY(0deg);
+			}
+			25%{
+				transform:rotateX(20deg) rotateY(180deg);
+			}
+			50%{
+				transform:rotateX(0deg) rotateY(360deg);
+			}
+			75%{
+				transform:rotateX(-20deg) rotateY(540deg);
+			}
+			100%{
+				transform:rotateX(0deg) rotateY(720deg);
+			}
+		}
+	</style>
+</head>
+<body>
+	<section>
+		<img src="images/pic1.jpg" alt="">
+		<img src="images/pic2.png" alt="">
+		<img src="images/pic3.png" alt="">
+		<img src="images/pic4.png" alt="">
+		<img src="images/pic5.jpg" alt="">
+		<img src="images/pic6.png" alt="">
+		<img src="images/pic7.png" alt="">
+		<img src="images/pic8.png" alt="">
+		<img src="images/pic9.png" alt="">
+		<img src="images/pic10.png" alt="">
+	</section>
+	<audio src="images/aaaaa.mp3" autoplay loop></audio>
+</body>
+</html>
